@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="">
+     <meta name="author" content="">
+     <link rel="icon" href="../../favicon.ico">
+
+     <title>example of flask </title>
+     <script>
+        //want to display this result somewhere under/next to forms?
+        var someVar= '{{ templateData }}';
+        console.log(someVar);
+     </script>
+
+ </head>
+
+ <body>
+
+     <div class="container">
+    <form method='POST' action="/">
+        <p>username: <input type="text" name="username"/></p>
+        <p>password: <input type="text" name='password'/></p>
+        <p><input type="submit" value="Login" style="width: 100px; height: 100px;"/></p>
+    </form>
+
+     </div>
+
+ </body>
+
+ </html>
