@@ -1,9 +1,8 @@
-from flask import Flask, render_template
+from flask import Flask
+from flask import render_template
 from flask import request
 from blah import valid_name
 app = Flask(__name__)
-
-
 @app.route('/', methods=['GET', 'POST'])
 def hello():
     if request.method == 'GET':
@@ -18,3 +17,6 @@ def hello():
         else:
             lol = "not valid";
         return render_template('index.html', templateData=lol)
+
+if __name__ == "__main__":
+    app.run()
